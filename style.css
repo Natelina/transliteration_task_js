@@ -1,0 +1,140 @@
+body {
+background: radial-gradient(circle farthest-corner at 100px 50px, #FBF2EB, #250dad);
+background-repeat: no-repeat;
+}
+.vse {
+display: flex;
+flex-direction: column;
+min-height: 805px;
+}
+.translit {
+font-style: italic;
+font-size: 50px;
+text-align: center;
+font-family:fantasy;
+font-weight: 900;
+}
+
+.translator {
+display: flex;
+flex-direction: column;
+align-items: center;
+border: rgba(151, 11, 123, 0.502) solid 4px;
+min-height: 500px;
+padding: 50px;
+padding-bottom: 100px;
+margin-left: 250px;
+margin-right: 250px;
+background-color: rgba(255, 255, 225, 0.324);
+}
+.outBorder {
+  border-radius: 10px;
+  width: 350px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.bloks {
+  display: flex;
+  flex-direction: row;
+  min-height: 300px;
+  margin-top: 30px;
+  
+}
+.blok1, .blok2  {
+  border: rgba(151, 11, 123, 0.502) solid 3px;
+  border-radius: 10px;
+  width: 250px;
+  background-color: rgba(255, 255, 225, 0.358);
+}
+.blok1 {
+  margin-right: 5px;
+}
+.blok2 {
+  margin-left: 5px;
+}
+.btnClear {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.wordInput {
+height: 30px;
+width: 250px;
+}
+.newDiv, .newDiv2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  margin-left: 2px;
+}
+.button, .btnClear, .btnDel {
+  height: 20px;
+}
+.end {
+  display: flex;
+  flex-direction: column;
+  align-items:space-evenly;
+}
+
+@media (max-width: 349px) {
+  .translator {
+    padding: 0;
+    margin: 0;
+  }
+  .bloks{
+    flex-direction: column;
+    justify-content: space-evenly;
+    }
+    .blok1, .blok2 {
+      min-height: 100px;
+      margin-bottom: 30px; 
+      width: 190px;
+    }
+    .wordInput {
+      width: 190px;
+    }
+    .outBorder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .button {
+      margin-top: 20px;
+    }
+    .end {
+      margin-bottom: 20px;
+    }
+}
+@media (min-width: 350px) and (max-width: 767px) {
+
+  .bloks{
+    flex-direction: column;
+    justify-content: space-evenly;
+    }
+    .blok1, .blok2 {
+      min-height: 100px;
+      margin-bottom: 30px; 
+    }
+    .translator {
+      margin: 0;
+    }
+    .outBorder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .button {
+      margin-top: 20px;
+    }
+    .end {
+      display: flex;
+      flex-direction: column;
+      align-items:space-evenly;
+    }
+}
+@media (min-width: 768px) and (max-width: 1400px) {
+  .translator {
+    align-items: center;
+    margin: 0;
+  }
+}
+
